@@ -15,7 +15,7 @@
   </style>
 </head>
 <body>
-  <aside class="Sidebar">
+  <aside class="sidebar">
   <!-- Sidebar starts -->
    <div class="icon">
 
@@ -26,19 +26,19 @@
   <ul class="options">
     <li class="option">Your stay
     <span>1</span></li>
-    <li class="option"><div>The house</div>div></li>
-    <li class="option"><div>Around to</div>div></li>
-    <li class="option"><div>Breakfast</div>div></li>
-    <li class="option"><div>Messages<</div>div>/li>
+    <li class="option"><div>The house</div></li>
+    <li class="option"><div>Around to</div></li>
+    <li class="option"><div>Breakfast</div></li>
+    <li class="option"><div>Messages</div></li>
   </ul>
    </nav>
   <!-- Local weather -->
-   <div class="Local_weather">  
+   <div class="local_weather">  
       <p>Today in Cassis</p>
       <span>27°</span>
       <p>Sunny · light breeze</p>
    </div>
-   <div class ="Est">
+   <div class ="est">
   Est. 1987
   Maison Soleil · 12 Rue des Oliviers · Cassis
   © 2026 Maison Soleil
@@ -46,79 +46,124 @@
    </aside>
   <!-- Sidebar ends -->
   <!-- Main content starts -->
-  <main>
-  Booking · Confirmed
-  Bienvenue, Lucia.
-
-  Print receipt
-  Add to calendar
-
+  <main class="content">
+    <div class="welcome">
+       <p>Booking · Confirmed</p>
+      <h1>Bienvenue, Lucia.</h1>
+    </div>
+    <div class="btn_print_calendar">
+      <button class="btn_print">Print receipt</button>
+      <button class="btn_calendar"> to calendar</button>
+    </div>
   <!-- Booking cards start -->
-
+   <div class="booking_card">
   <!-- Receipt card -->
-  Receipt
-  № MS-2026
-  0421-AH
-
-  Your stay
-
-  Check in
-  25 Apr
-  Saturday · 15:00
-
-  Check out
-  29 Apr
-  Wednesday · 11:00
-
-  Room · La Garrigue · 4 nights
-  € 620.00
-  Breakfast · 2 guests
-  € 96.00
-  Tourist tax
-  € 14.40
-
-  Total paid
-  € 730.40
-
-  Paid · Wise · GBP
+    <div class="receipt_card">
+      <div class="header_cardReceipt">
+      <div class="header_receipt">
+        <p>Receipt</p>
+        <p>№ MS-2026</p>
+        <p>0421-AH</p>
+      </div> 
+        <h3>Your stay</h3>
+      </div>
+      <hr>
+      <div class="check_card">
+        <div class="check_in">
+          <p class="roboto">Check in</p>
+          <h2>25 Apr</h2>
+          <p class="date">Saturday · 15:00 </p>
+        </div>
+      <div class="check_out">
+        <p>Check out
+        <h2>29 Apr</h2>
+        <p class="date">Wednesday · 11:00 </p>
+      </div>
+      <hr>
+      <div class="stay_summary">
+        <dl class="receipt item">
+          <div>
+            <dt>Room · La Garrigue · 4 nights</dt>
+            <dd>€ 620.00</dd>
+          </div>
+          <div>
+            <dt>Breakfast · 2 guests</dt>
+            <dd>€ 96.00</dd>
+          </div>
+          <div>
+            <dt>Tourist tax</dt>
+            <dd>€ 14.40</dd>
+          </div>
+          <hr>
+          <div class="total_summary">
+            <dt>Total paid</dt>
+            <dt>€ 730.40</dt>
+          </div>
+        </dl>
+        
+      </div>
+      <div class="paid_wise_gbp">
+        <p>Paid · Wise · GBP</p>
+        <div class="img">
+          <img src="./assets/images/icon-barcode.svg" alt="" class="barcode_icon">
+        </div>
+      <div>
+    </div>
   <!-- Barcode image -->
 
   <!-- Note from host card -->
-  Welcome
-  A note from your host, Margaux.
-  We're so glad you're coming. The shutters will be open, the lemonade cold, and the cat - Poivre - pretending not to notice you.
-  Room
-  La Garrigue
-
+    <div class="welcome_card">
+      <div class="header_cardWelcome">
+      <p>Welcome card<p>
+        <div class="img">
+          <img src="./assets/images/icon-sun.svg" alt="sun_icon" class="sun_icon">
+        </div>
+      </div>
+      <div class="margaux">
+        <em>A note from your host, <span>Margaux</span></em>.
+      </div>
+      <div text_cardWelcome>
+        <p>
+        We're so glad you're coming. The shutters will be open, the lemonade cold, and the cat - Poivre - pretending not to notice you.
+        Room
+        La Garrigue
+        <p>
+      </div>
+    </div>
+   </div>
   <!-- Booking cards end -->
 
   <!-- Guest info row starts -->
-
-  <!-- Arrival -->
-  Arrival
-  01
-  Check-in from 15:00
-  Sat, 25 April
-  Ring the brass bell by the blue door. If we're at the market, the key is in the terracotta pot by the olive tree.
-
-  <!-- Wifi -->
-  Wifi
-  02
-  Le Soleil · Guest
-  Password below
-  Network
-  Le Soleil · Guest
-  Password
-  soleil-2026
-  Copy
-
-  <!-- Breakfast -->
-  Breakfast
-  03
-  Served 8 - 10:30
-  On the terrace
-  Fresh figs, Marseille honey, pain au levain, and espresso. Gluten-free option? Leave a note the night before.
-
+    <div class="guest_info">
+    <!-- Arrival -->
+      <div class="arrival">
+      Arrival
+      01
+      Check-in from 15:00
+      Sat, 25 April
+      Ring the brass bell by the blue door. If we're at the market, the key is in the terracotta pot by the olive tree.
+      </div>
+      <!-- Wifi -->
+      <div class="wifi">
+      Wifi
+      02
+      Le Soleil · Guest
+      Password below
+      Network
+      Le Soleil · Guest
+      Password
+      soleil-2026
+      Copy
+      </div>
+      <!-- Breakfast -->
+      <div class="breakfast">
+      Breakfast
+      03
+      Served 8 - 10:30
+      On the terrace
+      Fresh figs, Marseille honey, pain au levain, and espresso. Gluten-free option? Leave a note the night before.
+      </div>
+    </div>
   <!-- Guest info row ends -->
   </main>
   <!-- Main content ends -->
