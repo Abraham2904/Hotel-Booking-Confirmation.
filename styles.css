@@ -1,0 +1,105 @@
+@font-face{
+    font-family: 'DM Mono';
+    src: url("./assets/fonts/dm-mono/DMMono-Regular.ttf") format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DM Mono';
+    src: url("./assets/fonts/dm-mono/DMMono-Medium.ttf")format('truetype');
+    font-weight: 500;
+    font-style: medium;
+}
+@font-face {
+    font-family: 'DM Sans';
+    src: url("./assets/fonts/dm-sans/DMSans-VariableFont_opsz\,wght.ttf") format('truetype');
+    font-weight: 400 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Frauces';
+    src: url("./assets/fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf") format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Frauces';
+    src: url("./assets/fonts/fraunces/Fraunces-Italic-VariableFont_SOFT\,WONK\,opsz\,wght.ttf") format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+*::after,*::before{
+    content: "";    
+    margin: 0;
+    box-sizing: border-box;   
+}
+body{
+    font-family: 'Dm Sans';
+    font-weight: 400;
+    margin:0;
+}
+.sidebar{
+height: 100vh;
+width: 100%;
+background-color: hsl(41, 100%, 93%);
+display: flex;
+flex-direction: column;
+}
+.header-menu{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top:10px;
+    margin: 0 10px 0 10px;
+}
+.open-close{
+    border: 2px solid #CCC;
+    margin-left: auto;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    }
+.first-hr{
+    margin: 0 10px 0 10px; 
+}
+.options{
+    list-style: none;
+    padding: 0;
+    margin-left: 10px;
+    margin-right: 10px; 
+    display: flex;
+    flex-direction: column;
+}
+.option{
+    display: flex;
+    width: 100%;
+    color:  hsl(33, 22%, 20%);
+    padding: 10px 0 10px 0;
+    border-radius: 10px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+.option p{
+    margin: 0;
+    margin-left: 10px;
+    width: 100%;
+    display: flex;
+}
+.option:first-of-type p > span{
+    margin-left: auto;
+    margin-right: 15px;
+    font-size: 0.60rem;
+    color: #FAFAFA;
+    background-color:  hsl(15, 74%, 41%);
+    width:18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;   
+}
+.option:hover{
+    background-color: hsl(40, 60%, 98%);
+}

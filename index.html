@@ -3,36 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 
   <title>Frontend Mentor | Hotel booking confirmation page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
   <aside class="sidebar">
   <!-- Sidebar starts -->
+   <div class="header-menu">
    <div class="icon">
-
-  Maison Soleil
+    <img src="./assets/images/logo.svg" alt="" class="img">
    </div>
-  <!-- Guest navigation -->
+   <div class="open-close">
+    <img src="./assets/images/icon-menu.svg" alt="" class="img">
+   </div>
+   </div>
+   <hr class="first-hr">
    <nav class="nav_options">
   <ul class="options">
-    <li class="option">Your stay
-    <span>1</span></li>
-    <li class="option"><div>The house</div></li>
-    <li class="option"><div>Around to</div></li>
-    <li class="option"><div>Breakfast</div></li>
-    <li class="option"><div>Messages</div></li>
+    <li class="option"><div><img src="./assets/images/icon-bed.svg"></div><p>Your stay
+    <span>1</span></p></li>
+    <li class="option"><div class="icon_option"><img src="./assets/images/icon-house.svg"></div><p>The house</p></li>
+    <li class="option"><div class="icon_option"><img src="./assets/images/icon-pin.svg"></div><p>Around town</p></li>
+    <li class="option"><div class="icon_option"><img src="./assets/images/icon-breakfast-outline.svg"></div><p>Breakfast</p></li>
+    <li class="option"><div class="icon_option"><img src="./assets/images/icon-mail.svg"></div><p>Messages</p></li>
   </ul>
    </nav>
-  <!-- Local weather -->
    <div class="local_weather">  
       <p>Today in Cassis</p>
       <span>27°</span>
@@ -136,32 +133,51 @@
   <!-- Guest info row starts -->
     <div class="guest_info">
     <!-- Arrival -->
-      <div class="arrival">
-      Arrival
-      01
-      Check-in from 15:00
-      Sat, 25 April
-      Ring the brass bell by the blue door. If we're at the market, the key is in the terracotta pot by the olive tree.
+      <div class="arrival guest">
+        <div class="icon_arrival icon_guest">
+          <div class="icon">
+            <img src="./assets/images/icon-key.svg" alt="" class="icon_key">
+          </div>
+        <p>Arrival</p>
+        <p>01</p>
+        </div>
+        <h2>Check-in from 15:00</h2>
+        <p>Sat, 25 April</p>
+        <p>Ring the brass bell by the blue door. If we're at the market, the key is in the terracotta pot by the olive tree.</p>
       </div>
       <!-- Wifi -->
-      <div class="wifi">
-      Wifi
-      02
-      Le Soleil · Guest
-      Password below
-      Network
-      Le Soleil · Guest
-      Password
-      soleil-2026
-      Copy
+      <div class="wifi guest">  
+        <div class="icon_wifi icon_guest">
+          <div class="icon">
+            <img src="./assets/images/icon-wifi.svg" alt="" class="wifi_icon">
+          </div>
+          <p>Wifi</p>
+          <p>02</p>
+        </div>
+        <h2 class="title_guest">Le Soleil · Guest</h2>
+        <p class="subtitle_guest">Password below</p>
+        <div class="network net_pass">
+          <p>Network</p>
+          <p>Le Soleil · Guest</p>
+        </div>
+        <div class="password net_pass">
+          <p>Password</p>
+          <p>soleil-2026</p>
+          <span>Copy</span>
+        </div>
       </div>
       <!-- Breakfast -->
-      <div class="breakfast">
-      Breakfast
-      03
-      Served 8 - 10:30
-      On the terrace
-      Fresh figs, Marseille honey, pain au levain, and espresso. Gluten-free option? Leave a note the night before.
+      <div class="breakfast guest">
+      <div class="icon_breakfast icon_guest">
+      <div class="icon">
+        <img src="./assets/images/icon-breakfast.svg" alt="" class="breakfast_icon">
+      </div>
+      <p>Breakfast</p>
+      <p>03</p>
+      </div>
+      <h2 class="title_guest">Served 8 - 10:30</h2>
+      <p class="subtitle_guest">On the terrace</p>
+      <p>Fresh figs, Marseille honey, pain au levain, and espresso. Gluten-free option? Leave a note the night before.</p>
       </div>
     </div>
   <!-- Guest info row ends -->
