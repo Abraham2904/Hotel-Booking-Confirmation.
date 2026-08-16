@@ -11,16 +11,19 @@
 <body>
   <aside class="sidebar">
   <!-- Sidebar starts -->
+   <input type="checkbox" id="open-close_icon">
    <div class="header-menu">
    <div class="icon">
     <img src="./assets/images/logo.svg" alt="" class="img">
    </div>
-   <div class="open-close">
-    <img src="./assets/images/icon-menu.svg" alt="" class="img">
+   <label class="open-close" for="open-close_icon">
+    <img src="./assets/images/icon-menu.svg" alt="" class="img_menu">
+    <img src="./assets/images/icon-close.svg" class="img_close">
+   </label>
    </div>
-   </div>
-   <hr class="first-hr">
+   <hr class="siderbar-hr" id="one">
    <nav class="nav_options">
+   <div class="menu">
   <ul class="options">
     <li class="option"><div><img src="./assets/images/icon-bed.svg"></div><p>Your stay
     <span>1</span></p></li>
@@ -29,28 +32,33 @@
     <li class="option"><div class="icon_option"><img src="./assets/images/icon-breakfast-outline.svg"></div><p>Breakfast</p></li>
     <li class="option"><div class="icon_option"><img src="./assets/images/icon-mail.svg"></div><p>Messages</p></li>
   </ul>
-   </nav>
-   <div class="local_weather">  
+</div>
+   <div class="local_weather">
+      <div class="img">
+        <img src="./assets/images/icon-weather.svg" alt="sun_icon" class="icon_weather">
+      </div>  
       <p>Today in Cassis</p>
-      <span>27°</span>
+      <h2>27°</h2>
       <p>Sunny · light breeze</p>
    </div>
+   <hr class="siderbar-hr">
    <div class ="est">
-  Est. 1987
-  Maison Soleil · 12 Rue des Oliviers · Cassis
-  © 2026 Maison Soleil
+  <p>Est. 1987</p>
+  <p>Maison Soleil · 12 Rue des Oliviers · Cassis</p>
+  <p>© 2026 Maison Soleil</p>
    </div>
+   </nav>
    </aside>
   <!-- Sidebar ends -->
   <!-- Main content starts -->
   <main class="content">
     <div class="welcome">
-       <p>Booking · Confirmed</p>
-      <h1>Bienvenue, Lucia.</h1>
+       <p>BOOKING·CONFIRMED</p>
+      <h1>Bienvenue, <span>Lucia.</span></h1>
     </div>
     <div class="btn_print_calendar">
       <button class="btn_print">Print receipt</button>
-      <button class="btn_calendar"> to calendar</button>
+      <button class="btn_calendar">Add to calendar</button>
     </div>
   <!-- Booking cards start -->
    <div class="booking_card">
@@ -58,29 +66,32 @@
     <div class="receipt_card">
       <div class="header_cardReceipt">
       <div class="header_receipt">
-        <p>Receipt</p>
+        <p>RECEIPT</p>
+        <div>
         <p>№ MS-2026</p>
         <p>0421-AH</p>
+        </div>
       </div> 
         <h3>Your stay</h3>
       </div>
       <hr>
       <div class="check_card">
         <div class="check_in">
-          <p class="roboto">Check in</p>
-          <h2>25 Apr</h2>
-          <p class="date">Saturday · 15:00 </p>
+            <p class="roboto">Check in</p>
+            <h2>25 Apr</h2>
+            <p class="date">Saturday · 15:00 </p>
+          </div>
+        <div class="check_out">
+          <p>Check out
+          <h2>29 Apr</h2>
+          <p class="date">Wednesday · 11:00 </p>
         </div>
-      <div class="check_out">
-        <p>Check out
-        <h2>29 Apr</h2>
-        <p class="date">Wednesday · 11:00 </p>
       </div>
       <hr>
       <div class="stay_summary">
-        <dl class="receipt item">
+        <dl class="receipt_item">
           <div>
-            <dt>Room · La Garrigue · 4 nights</dt>
+            <dt>Room · La Garrigue x 4 nights</dt>
             <dd>€ 620.00</dd>
           </div>
           <div>
@@ -91,40 +102,42 @@
             <dt>Tourist tax</dt>
             <dd>€ 14.40</dd>
           </div>
-          <hr>
+          <hr class="receipt_divider">
           <div class="total_summary">
-            <dt>Total paid</dt>
+            <dt>TOTAL PAID</dt>
             <dt>€ 730.40</dt>
           </div>
         </dl>
-        
       </div>
       <div class="paid_wise_gbp">
         <p>Paid · Wise · GBP</p>
         <div class="img">
           <img src="./assets/images/icon-barcode.svg" alt="" class="barcode_icon">
         </div>
-      <div>
+      </div>
     </div>
   <!-- Barcode image -->
 
   <!-- Note from host card -->
     <div class="welcome_card">
+      <hr>
       <div class="header_cardWelcome">
-      <p>Welcome card<p>
+      <p>WELCOME CARD<p>
         <div class="img">
           <img src="./assets/images/icon-sun.svg" alt="sun_icon" class="sun_icon">
         </div>
       </div>
       <div class="margaux">
-        <em>A note from your host, <span>Margaux</span></em>.
+        <em>A note from your host, <span>Margaux.</span></em>.
       </div>
-      <div text_cardWelcome>
+      <div class="text_cardWelcome">
         <p>
         We're so glad you're coming. The shutters will be open, the lemonade cold, and the cat - Poivre - pretending not to notice you.
-        Room
-        La Garrigue
-        <p>
+        </p>
+      </div>
+      <div class="footer_cardWelcome">
+        <p>ROOM</p>
+        <h2>La Garrigue</h2>
       </div>
     </div>
    </div>
@@ -163,7 +176,7 @@
         <div class="password net_pass">
           <p>Password</p>
           <p>soleil-2026</p>
-          <span>Copy</span>
+          <button>Copy</button>
         </div>
       </div>
       <!-- Breakfast -->
@@ -185,8 +198,8 @@
   <!-- Main content ends -->
 
   <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    <p>Challenge by <a class="link"href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Coded by <a class="link"href="#">Abraham Rivera Choez</a> </p>. 
   </footer>
 </body>
 </html>
